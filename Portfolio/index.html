@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--------------------------- header-==================--- -->
+    <header>
+        <div class="title"><h2>Port<span>Folio</span></h2></div>
+        <nav>
+            <ul>
+                <li><a class ="active" href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>  
+                <li><a href="#education">Education</a></li>  
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <button class="hamBtn" onclick="hamShow()"><i class="fa-solid fa-bars" id="hamburger"></i></button>
+        </nav>
+    </header>
+
+    <!-- .............................Home section....................................-->
+
+    <section class="home">
+        <div class="homeContent" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <h3>Hello, <span>I'm</span></h3>
+            <h1>Suresh Kumar</h1>
+            <h4>Bachelor of Engineering in Computer Science</h4>
+            <h5>About me</h5>
+            <p>As I am a fresher, completely aiming at achieving great heights with
+                a lot of aspirations. Seeking a beginner role and a challenging position to
+                enhance and explore my knowledge for the development
+                for myself</p>
+            <a href="SURESH KUMAR.pdf" download="Suresh Kumar CV.pdf">
+                <button class="resumeBtn">
+                    Resume <i class="fa-solid fa-download"></i>
+                </button>
+            </a> 
+        </div>
+        <div class="profileImage" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <img src="edited.png" alt="">
+        </div>
+    </section>
+
+    <!-- .............................Skills section....................................-->
+
+    <div class="skills" id="skills">
+        <div class = "skillHeader" data-aos="fade-right"  data-aos-duration="500">
+            <h1>Skills</h1>
+        </div>
+        <div class="skillsList">
+            <ul>
+                <li data-aos="flip-left" data-aos-duration="800" data-aos-once="false">
+                    <h5><ion-icon name="caret-forward-outline"></ion-icon>  HTML, CSS, Javascript <img src="HTML-CSS-JS.png" style="width: 10vmin; height: auto;"> </h5>
+                    <p>I have a basic understanding of design, and to further my career growth, I learned HTML, CSS, 
+                        and JavaScript. After acquiring these skills, I designed several webpages for practice.
+                         Through this experience, I developed a strong interest in frontend development.</p>
+                </li>
+                <li data-aos="flip-left" data-aos-duration="800">
+                   <h5><ion-icon name="caret-forward-outline"></ion-icon>  MS Word & Excel <img src="Word-Excel.png" style="width: 8vmin; height: auto;"></h5>
+                   <p>During my college project, I recognized the importance of documentation, which led me to learn how to use 
+                    essential tools such as Microsoft Word. Through this experience, 
+                    I developed proficient documentation skills. Additionally, I possess a basic understanding of Microsoft Excel.</p>
+                </li>
+                <li data-aos="flip-left" data-aos-duration="800">
+                    <h5><ion-icon name="caret-forward-outline"></ion-icon>  Python  <img src="python.png" style="width: 3.5vmin; height: auto;"></h5>
+                    <p>I have a foundational understanding of Python from my team project experience, and 
+                        I'm now looking to enhance my Python skills for career growth.</p>
+                </li>
+                <li data-aos="flip-left" data-aos-duration="800">
+                    <h5><ion-icon name="caret-forward-outline"></ion-icon>  Adobe After Effects, Premiere Pro, Photoshop  <img src="Ae-pr-ps.png" style="width: 10vmin; height: auto;"></h5>
+                    <p>During my schooling, I developed a interest in editing, which led me to explore various 
+                        editing software such as Photoshop, After Effects, and Premiere Pro. As a result of 
+                        my dedication, I honed my skills in editing and even pursued freelance opportunities in this field.</p>
+                </li>
+                <li data-aos="flip-left" data-aos-duration="800">
+                    <h5><ion-icon name="caret-forward-outline"></ion-icon>  UI / UX Design  <img src="UIUX.png" style="width: 5vmin; height: auto;"></h5>
+                    <p>I possess a foundational knowledge in UI/UX design and have a genuine passion for creating 
+                        imaginative and innovative designs. My proficiency extends to working with the Figma tool, 
+                        allowing me to translate my creative ideas into visually appealing interfaces.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- .............................Education section....................................-->
+
+    <div class="education" id="education">
+        <div class="educationHeader" data-aos="fade-right"  data-aos-duration="500">
+            <h1>Education</h1>
+        </div>
+        <div class="educationContent">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <img src="school.png" alt="">
+                    <h3>10th Standard</h3>
+                    <p>Vidhyalakshmi Matric.hr.sec.School,</p>
+                    <p>Vellore Dist.</p>
+                    <h4>(2016 - 2017)</h4>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <img src="school.png" alt="">
+                    <h3>12th Standard</h3>
+                    <p>Vidhyalakshmi Matric.hr.sec.School,</p>
+                    <p>Vellore Dist.</p>
+                    <h4>(2018 - 2019)</h4>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <img src="university.png" alt="">
+                    <h3>B.E in Computer Science</h3>
+                    <p>Kingston Engineering College,</p>
+                    <p>Vellore Dist.</p>
+                    <h4>(2019 - 2023)</h4>
+                </li>
+            </ul>+
+            
+        </div>
+    </div>
+
+
+<!-- .............................Project section....................................-->
+
+    <div class="project" id="project">
+        <div class="projectHeader" data-aos="fade-right"  data-aos-duration="500">
+            <h1>Project</h1>
+        </div>
+        <div class="projectContent">
+            <ul>
+                <div class="carPrediction">
+                    <img src="Car Prediction.png" data-aos="fade-right" data-aos-duration="1000">
+                    <li data-aos="fade-left" data-aos-duration="1000">
+                        <h3>Car Resale Value Prediction <a href="https://github.com/IBM-EPBL/IBM-Project-50728-1660922894.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                        <p><span>Domain :</span> Machine Learning</p>
+                        <p><span>Language :</span> Python</p>
+                        <p>Predicting car resale value using machine learning involves creating a model that can estimate the future
+                             selling price of a used car based on various features and historical data. </p>
+                    </li>
+                </div>
+
+                <div class="swahili">
+                    <li data-aos="fade-right" data-aos-duration="1000">
+                        <h3>Classifying Swahili Smishing Attacks For Mobile Money Users <a href="https://github.com/Sureshkumar04/Classifying-Swahili-Smishing-Attacks-For-Mobile-Money-Users.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                        <p><span>Domain :</span> Machine Learning</p>
+                        <p><span>Language :</span> Python</p>
+                        <p>A hybrid machine-learning model achieved 99.86% accuracy in detecting Swahili Smishing texts, 
+                            highlighting the significance for low-resource language cybersecurity.</p>
+                    </li>
+                    <img src="Swahisli.png" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+
+                <div class="carPrediction">
+                    <img src="Food.png" data-aos="fade-right" data-aos-duration="1000">
+                    <li data-aos="fade-left" data-aos-duration="1000">
+                        <h3>Zomato Clone <a href="https://github.com/Sureshkumar04/Food-page.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                        <p><span>Markup Language :</span> HTML and CSS</p>
+                        <p>I got inspired by Zomato's web page, so I tried to recreate it and added some extra features using HTML and CSS.</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+<!-- .............................Contact section....................................-->
+    <div class="contact" id="contact">
+        <div class="contactHeader" data-aos="fade-right"  data-aos-duration="500">
+            <h1>Contact me</h1>
+        </div>
+        <div class="contactContent">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                    <a href="tel:8220815091" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <h5>Phone</h5>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                    <a href="mailto:sureshkumar41001@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <h5>Email</h5>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+                    <a href="https://wa.me/8220815091" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <h5>whatsapp</h5>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+                    <a href="https://www.linkedin.com/in/suresh-kumar-p-975a42252" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <h5>Linkedin</h5>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                    <a href="https://instagram.com/_._.s_u_r_e_s_h._04._?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <h5>Instagram</h5>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
+                    <a href="https://github.com/Sureshkumar04" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <h5>Github</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="address">
+            <h3>Address</h3>
+            <p>
+                1/52th,Main Road, <br>
+                Melmoil Post, <br>
+                K.V.Kuppam, <br>
+                Vellore Dist-632203.
+            </p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#education">Education</a></li> 
+                <li><a href="#project">Project</a></li> 
+            </ul>
+        </div>
+        <p> &copy; 2023 Created by Suresh. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/bc8beb3c05.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
