@@ -292,6 +292,7 @@ img {
 @media (max-width: 962px) {
     .nav-link {
         display: inline-block;
+        
     }
 
     .main-img {
