@@ -93,8 +93,8 @@ img {
 
 .blue-color {
     background: #3297CB;
-    background: linear-gradient(to right, #3297CB 0%, #02E1FF 0%, #39ACE7 50%);
-    -webkit-background-clip: text;
+    background: radial-gradient(997px at 5.8% 11.8%, rgb(0, 201, 235) 0%, rgb(222, 164, 255) 90%);
+        -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
