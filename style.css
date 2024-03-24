@@ -111,7 +111,7 @@ img {
 }
 
 .glass-bg {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(92, 92, 92, 0.171);
     backdrop-filter: blur(5px);
     border-radius:0 0 10px 10px ;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -164,6 +164,10 @@ img {
 .l-border{
     box-shadow: -4px 4px 6px 2px #006ca11e;
     border-radius: 10px;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 
