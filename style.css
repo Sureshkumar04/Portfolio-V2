@@ -205,6 +205,15 @@ img {
     color: var(--light-main-blue);
 }
 
+.navbar .nav-link.active{
+    color: var(--light-main-blue);
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
+
+
 /* END NAVBAR */
 
 /* SECTION */

@@ -1,5 +1,5 @@
 Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
+  // Your custom options
+});
 
-  AOS.init();
+AOS.init();  
