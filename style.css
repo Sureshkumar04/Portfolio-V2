@@ -424,3 +424,10 @@ img {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
   }
+
+
+  @keyframes web {
+    0%{top: 0;}
+    50%{top: -180%;}
+    100%{top: 0;}
+  }
