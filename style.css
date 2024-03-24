@@ -300,6 +300,13 @@ img {
 }
 
 
+@media (max-width: 360px) {
+    .mini-320{
+        font-size: 80%;
+    }
+}
+
+
 @keyframes Scan {
     from{
         top: -500px;
