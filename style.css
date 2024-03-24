@@ -313,6 +313,15 @@ img {
     }
 }
 
+@media (min-width: 962px) {
+    .webui{
+        display: block; 
+        position: absolute; 
+        animation: web 15s infinite; 
+        animation-delay: 2s;
+    }
+}
+
 
 @media (max-width: 360px) {
     .mini-320{
