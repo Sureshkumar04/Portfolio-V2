@@ -240,6 +240,7 @@ img {
 
 .main-img {
     width: 130%;
+    animation: mainimg 3s infinite;
 }
 
 /* END SECTION */
@@ -322,6 +323,8 @@ img {
         animation-delay: 2s;
     }
 }
+
+
 
 
 @media (max-width: 360px) {
@@ -462,9 +465,15 @@ html {
 }
 
 .arrow-align {
-    top: 5px;
-    right: -30px;
-    width: 30%;
+    top: 0;
+    right: 0;
+    width: 3rem;
+}
+
+@media (max-width: 742px) {
+    .arrow-align{
+        right: 3rem;
+    }
 }
 
 .insta-btn{
@@ -475,4 +484,20 @@ html {
 .insta-btn:hover{
     color: black;
     background: white;
+}
+
+.back-btn:hover{
+    color: var(--light-main-blue);
+}
+
+
+.insta-max-width{
+    max-width: 370px;
+}
+
+
+@keyframes mainimg {
+    0%{transform: translateY(1.5px);}
+    50%{transform: translateY(-1.5px);}
+    100%{transform: translateY(1.5px);}
 }
