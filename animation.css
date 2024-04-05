@@ -1,0 +1,34 @@
+/* Animation */
+
+.fade-up-hidden{
+    transform: translateY(100%);
+    transition: 0.5s;
+    
+}
+
+.fade-up-show{
+    transform: translateY(0);
+}
+
+.fade-left-hidden{
+   opacity: 0;
+   transform: translateX(-15%);
+   transition: 0.5s;
+}
+
+.fade-left-show{
+    opacity: 1;
+   transform: translateX(0);
+}
+
+
+.fade-down-hidden{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.fade-down-show{
+    opacity: 1;
+    transform: translateY(0);
+}

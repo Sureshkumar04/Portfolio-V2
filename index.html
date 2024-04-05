@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suresh Kumar Portfolio</title>
   <link rel="icon" type="image/png" href="Title icon.png">
+  <link rel="stylesheet" href="animation.css">
 
   <script src="https://kit.fontawesome.com/bc8beb3c05.js" crossorigin="anonymous"></script>
 
@@ -20,7 +21,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-  <nav class="navbar navbar-expand-lg fixed-top glass-nav-bg" data-aos="fade-down" data-aos-duration="1000"
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav-bg fade-down-hidden" data-aos="fade-down" data-aos-duration="1000"
     data-bs-theme="dark">
     <div class="container-fluid">
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -59,15 +60,15 @@
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-lg-8">
-          <h1 class="brand-name display-4 fw-semibold text-uppercase font-change mb-0 " data-aos="fade-right"
-            data-aos-duration="1000">I'm <span class="blue-color font-change fw-bold">Suresh
+          <h1 class="brand-name display-4 fw-semibold text-uppercase font-change mb-0 fade-left-hidden" style="overflow: hidden;">I'm <span class="blue-color font-change fw-bold fade-up-hidden" style="display: inline-block; transition-delay: 300ms;">Suresh
               Kumar</span></h1>
-          <h5 class="role display-2 mb-4" data-aos="fade-left" data-aos-duration="500"><span class="me-ld-5">Web
-              Developer</span> <span class="mx-1 mx-md-4">|</span>
-            <span>Graphic Designer</span>
+          <h5 class="role display-2 mb-4 " data-aos="fade-left" data-aos-duration="500">
+            <span class="me-ld-5 fade-down-hidden" style="display: inline-block; transition-delay: 0.1s;">Web Developer</span> 
+            <span class="mx-1 mx-md-4 fade-down-hidden" style="display: inline-block; transition-delay: 0.3s;">|</span>
+            <span class="fade-down-hidden" style="display: inline-block; transition-delay: 0.5s;">Graphic Designer</span>
           </h5>
-          <h3 class="fw-bold about-me" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">About me</h3>
-          <p class="fw-lighter text-justify" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">I am a
+          <h3 class="fw-bold about-me fade-left-hidden" style="transition-delay: 0.5s;">About me</h3>
+          <p class="fw-lighter text-justify fade-left-hidden" style="transition-delay: 0.6s;">I am a
             creative and innovative individual, proficient in both Graphic Design and Web Development. I excel at
             crafting visually captivating designs and user interfaces, seamlessly merging artistic flair with technical
             expertise to deliver engaging digital experiences that consistently exceed expectations.</p>
