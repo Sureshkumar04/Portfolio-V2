@@ -67,5 +67,16 @@
 .diagonal-Flip-show{
     opacity: 1;
     transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
-    
+}
+
+
+.flip-left-hidden{
+    opacity: 0;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: 0.5s;
+}
+
+.flip-left-show{
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg);
 }

@@ -108,3 +108,20 @@ const diagonalFliphidden = document.querySelectorAll(".diagonal-Flip-hidden");
 diagonalFliphidden.forEach((el)=>diagonalFlip.observe(el));
 
 
+// Flip left
+const flipLeft  = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add("flip-left-show");
+        }else{
+            entry.target.classList.remove("flip-left-show");
+
+        }
+    });
+});   
+
+const flipLefthidden = document.querySelectorAll(".flip-left-hidden");
+flipLefthidden.forEach((el)=>flipLeft.observe(el));
+
+
