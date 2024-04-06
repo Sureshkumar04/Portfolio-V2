@@ -54,3 +54,18 @@
 .scale-in-show{
     transform: scale(1);
 }
+
+
+.diagonal-Flip-hidden{
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, 180deg);
+    transition: .4s;
+    transition: 0.5s;
+}
+
+
+.diagonal-Flip-show{
+    opacity: 1;
+    transform: rotate3d(1, 0, 0, 0deg);
+    
+}

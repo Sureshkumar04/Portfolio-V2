@@ -89,3 +89,22 @@ const scalein = new IntersectionObserver((entries)=>{
 
 const scaleinhidden = document.querySelectorAll(".scale-in-hidden");
 scaleinhidden.forEach((el)=>scalein.observe(el));
+
+
+// diagonalFlip 
+const diagonalFlip  = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add("diagonal-Flip-show");
+        }else{
+            entry.target.classList.remove("diagonal-Flip-show");
+
+        }
+    });
+});   
+
+const diagonalFliphidden = document.querySelectorAll(".diagonal-Flip-hidden");
+diagonalFliphidden.forEach((el)=>diagonalFlip.observe(el));
+
+

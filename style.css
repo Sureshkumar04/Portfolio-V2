@@ -373,7 +373,6 @@ img {
 /* Shine hover */
 .shine-hover {
     --a: 2deg;
-    /* control the angle of rotation (the smaller, the better) */
     transform: perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 1)*var(--a)));
     -webkit-mask:
         linear-gradient(135deg, #000c 40%, #000, #000c 60%) 100% 100%/250% 250%;
