@@ -1,34 +1,56 @@
 /* Animation */
 
-.fade-up-hidden{
+.fade-up-hidden {
+    opacity: 0;
     transform: translateY(100%);
     transition: 0.5s;
-    
+
 }
 
-.fade-up-show{
+.fade-up-show {
+    opacity: 1;
     transform: translateY(0);
 }
 
-.fade-left-hidden{
-   opacity: 0;
-   transform: translateX(-15%);
-   transition: 0.5s;
+.fade-left-hidden {
+    opacity: 0;
+    transform: translateX(-15%);
+    transition: 0.5s;
 }
 
-.fade-left-show{
+.fade-left-show {
     opacity: 1;
-   transform: translateX(0);
+    transform: translateX(0);
+}
+
+.fade-right-hidden {
+    opacity: 0;
+    transform: translateX(15%);
+    transition: 0.5s;
+}
+
+.fade-right-show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
-.fade-down-hidden{
+.fade-down-hidden {
     transform: translateY(-100%);
     opacity: 0;
     transition: 0.5s;
 }
 
-.fade-down-show{
+.fade-down-show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+.scale-in-hidden{
+    transform: scale(0);
+    transition: 0.3s;
+}
+.scale-in-show{
+    transform: scale(1);
 }

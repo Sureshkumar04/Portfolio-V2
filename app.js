@@ -37,6 +37,23 @@ const fadeLeft = new IntersectionObserver((entries)=>{
 const fadelefthidden = document.querySelectorAll(".fade-left-hidden");
 fadelefthidden.forEach((el)=>fadeLeft.observe(el));
 
+// fade right
+
+const faderight = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add("fade-right-show");
+        }else{
+            entry.target.classList.remove("fade-right-show");
+
+        }
+    });
+});   
+
+const faderighthidden = document.querySelectorAll(".fade-right-hidden");
+faderighthidden.forEach((el)=>faderight.observe(el));
+
 
 // Fade down
 
@@ -54,3 +71,21 @@ const fadedown = new IntersectionObserver((entries)=>{
 
 const fadedownhidden = document.querySelectorAll(".fade-down-hidden");
 fadedownhidden.forEach((el)=>fadedown.observe(el));
+
+
+// Scale in
+
+const scalein = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add("scale-in-show");
+        }else{
+            entry.target.classList.remove("scale-in-show");
+
+        }
+    });
+});   
+
+const scaleinhidden = document.querySelectorAll(".scale-in-hidden");
+scaleinhidden.forEach((el)=>scalein.observe(el));
