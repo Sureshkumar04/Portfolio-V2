@@ -506,3 +506,48 @@ html {
     50%{transform: translateY(-1.5px);}
     100%{transform: translateY(1.5px);}
 }
+
+
+.move-top{
+    position: fixed;
+    right: -200px;
+    bottom: 20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    font-size: 1.5rem;
+    color: white;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.move-top-show{
+    right: 20px;
+}
+
+.move-top i{
+    background: var(--light-main-blue);
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+
+.move-top svg{
+    position: absolute;
+    z-index: -2;
+}
+
+
+.pxl-scroll-progress-circle path {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    box-sizing: border-box;}
+

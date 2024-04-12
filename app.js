@@ -125,3 +125,39 @@ const flipLefthidden = document.querySelectorAll(".flip-left-hidden");
 flipLefthidden.forEach((el)=>flipLeft.observe(el));
 
 
+
+window.addEventListener('scroll', function() {
+    // Calculate the scroll progress
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.clientHeight;
+    const scrollProgress = (scrollTop / (documentHeight - windowHeight)) * 100; // Change 300 to 100 for percentage
+
+
+    console.log(scrollProgress)
+
+
+    if(scrollProgress >= 10){
+        document.querySelector(".move-top").classList.add('move-top-show');
+    }else{document.querySelector(".move-top").classList.remove('move-top-show');}
+    // Update the width of the progress indicator based on the scroll progress
+
+    // Get the <path> element
+    var path = document.querySelector('.pxl-scroll-progress-circle path');
+
+    // Get the computed style of the path
+    var style = window.getComputedStyle(path);
+
+    // Calculate the strokeDashoffset
+    var pathLength = path.getTotalLength(); // Get the total length of the path
+    var progressScrollDash = pathLength - (scrollProgress / 100) * pathLength;
+
+    // Update the strokeDashoffset property
+    path.style.strokeDashoffset = progressScrollDash;
+});
+
+
+
+
+
+
