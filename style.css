@@ -255,6 +255,14 @@ input::-webkit-inner-spin-button {
     animation: mainimg 3s infinite;
 }
 
+
+.main-img img:nth-child(2){
+    top: 0;
+    left: 0;
+    z-index: -99;
+    animation: dpimg 6s infinite;
+}
+
 /* END SECTION */
 
 
@@ -529,6 +537,7 @@ html {
     place-items: center;
     z-index: 999;
     transition: 0.5s;
+    animation: mainimg 3s infinite;
 }
 
 .move-top-show{
@@ -557,3 +566,8 @@ html {
     stroke-width: 6;
     box-sizing: border-box;}
 
+@keyframes dpimg {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.96);}
+    100%{transform: scale(1);}
+}
