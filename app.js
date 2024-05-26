@@ -161,6 +161,25 @@ window.addEventListener('scroll', function() {
 
 
 window.onload = function() {
-    // Reset the form fields when the page loads
     document.getElementById("form").reset();
 };
+
+window.addEventListener("load", ()=>{
+    let perloader = document.querySelector('.preloader');
+    let innerloader = document.querySelector('.innerloader');
+    let percentage = document.querySelector('.percentage');
+
+    let load = 0;
+    let interval = setInterval(frame, 10);
+
+    function frame() {
+        if (load >= 100) {
+            
+            perloader.style.display = 'none';
+        } else {
+            load++;
+            percentage.innerText = load + '%';
+            innerloader.style.width = load + "%";
+        }
+    }
+})
