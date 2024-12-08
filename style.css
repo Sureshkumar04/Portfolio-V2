@@ -610,3 +610,17 @@ html {
     50%{opacity: 1;}
     100%{opacity: 0;}
 }
+
+
+
+
+.video-wrapper {
+    width: auto;
+    /* Set desired maximum width */
+    margin: 0 auto;
+    /* Center the video */
+}
+
+.video-wrapper video {
+    width: 100%;
+}
